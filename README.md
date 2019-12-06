@@ -74,28 +74,31 @@ Additionally, we will be using a process called Test Driven Development, commonl
 1. Clone this repo to your projects folder following the "Getting Started" directions. Take a moment to orient yourself with the test runner, the existing tests, and the implementation inside of `code.js`.
 
 1. Once you're setup and comfortable, go to `code.js` and change the name of the `helloWorld` function to `hello`. Then refresh `report.html` in your browser.
-    - What do you notice about the test results?
-    - What are some ways you think we could get the tests to turn green again?
+    - What do you notice about the test results? //all red now
+    - What are some ways you think we could get the tests to turn green again? //change back
     - Set the function name in `code.js` back to `helloWorld` and re-run the tests.
     
 1. Inside of the `helloWorld` function in `code.js`, replace `return "Hello, World!"` with `return "Hello"`.
-    - Run the tests by refreshing `report.html` in your browser.
-    - Which tests fail? Which tests are still green?
+    - Run the tests by refreshing `report.html` in your browser. 
+    - Which tests fail? Which tests are still green? //"should return the string "Hello, World!" when executed""
     - Set the implementation back to `return "Hello, World!"`
 
 1. Inside of the `helloWorld` function in `code.js`, change the line `return "Hello, World!"` to `console.log("Hello, World!")`. Then refresh `report.html`.
-    - What happens to the tests? Identify which tests stay green and which ones turn red. 
-    - Why do you think that is?
-    - Consider, what is the return value of a `console.log`? *hint*, it's always the same
-    - Consider, what is the return value of a `return`?
+    - What happens to the tests? Identify which tests stay green and which ones turn red. //all turn red except that it is still a defined function
+    - Why do you think that is? //because the other requirements want the function to "return" something
+    - Consider, what is the return value of a `console.log`? *hint*, it's always the same //returns value of parameter given
+    - Consider, what is the return value of a `return`? //the function output
     - Fix your `helloWorld` implementation so that it greens all the tests.
 
 1. Now, let's purposefully put a syntax error into the `helloWorld` function, to see what happens with the tests. 
-    - Open up `code.js` and remove the closing curly brace from the end of the `helloWorld` function definition.
-    - Refresh `report.html` in your browser.
+    - Open up `code.js` and remove the closing curly brace from the end of the `helloWorld` function definition. 
+    - Refresh `report.html` in your browser. //everything fails
     - Fix the syntax error and confirm that tests are all green.
 
 1. Now, go to `code.js` and replace the function statement for `helloWorld` with a function experession. Do all the tests stay green or not? Why or why not? Double check your syntax. These are interchangeable because functions are *first class* citizens in the JS language.
+
+//all the tests stay green because the function is still defined and returns the same output.
+
 ```js
 // function statement syntax
 function helloWorld() {
