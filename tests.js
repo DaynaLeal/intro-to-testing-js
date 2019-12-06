@@ -54,3 +54,16 @@ describe('isFive', function() {
         expect(isFive(6)).toBe(false);
     });
 });
+
+
+describe('isEven', function() {
+    it('should be a defined function', function () {
+        expect(typeof isEven).toBe('function');
+    });
+    // it('to be', function() {
+    //     expect(test).toBe(true);
+    // });
+    // it('not to be', function() {
+    //     expect(test).not.toBe(false);
+    // });
+});
